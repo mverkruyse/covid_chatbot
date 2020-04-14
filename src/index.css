@@ -11,3 +11,139 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerLogo {
+  padding: 10px;
+}
+
+.headerLinks {
+  color: white;
+  display: flex;
+}
+
+.AppPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.AppTopPage {
+  background: #f6f6f6;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.AppMiddlePage {
+  background: rgb(226, 0, 116);
+  height: 300px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AppMiddlePage>div {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: -1.1px;
+  line-height: 1;
+  width: 80vw;
+  text-align: center;
+}
+
+.AppBottomPage {
+  background-image: linear-gradient(to right, #111218, #20232e, #111218);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AppBottomPage>div {
+  width: 80vw;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+a {
+  display: block;
+  padding: 15px;
+  margin-right: 10px;
+  color: rgba(226, 0, 116, 1);
+  background: transparent;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  transition: all 0.15s ease-in;
+}
+
+a:hover {
+  color: white;
+  background: rgba(226, 0, 116, .7);
+}
+
+a.endLink {
+  color: white;
+  background: rgba(226, 0, 116, 1);
+}
+
+a.endLink:hover {
+  color: white;
+  background: rgba(226, 0, 116, .5);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a.logoAnchor {
+  display: inline;
+  padding: 0px;
+}
+
+a.logoAnchor:hover {
+  background: transparent;
+}
+
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .AppMiddlePage {
+    height: 270px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .AppMiddlePage {
+    height: 200px;
+  }
+}
